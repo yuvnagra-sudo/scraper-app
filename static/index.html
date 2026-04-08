@@ -715,6 +715,7 @@ async function startJob() {
   form.append('timeout', document.getElementById('timeout').value);
   form.append('enable_verify', document.getElementById('enableVerify').checked);
   form.append('enable_dork', document.getElementById('enableDork').checked);
+  form.append('proxy_url', document.getElementById('proxyUrl').value || '');
 
   document.getElementById('btnStart').disabled = true;
   try {
